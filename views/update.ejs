@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
+</head>
+
+<body>
+    <section>
+        <form action="http://localhost:3000/comments/<%= comment.id %>?_method=PATCH" method="POST">
+            <h2>comment by <%= comment.username %>: </h2>
+            <label for="comment">Comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="5"><%= comment.comment %></textarea>
+            <br>
+            <button>update</button>
+        </form>
+
+        <form action="http://localhost:3000/comments/<%= comment.id %>?_method=DELETE" method="POST">
+            <h3>Delete comment</h3>
+            <button>Delete</button>
+        </form>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section>
+        <form action="http://localhost:3000/comments" method="get">
+            <button>get all comments</button>
+        </form>
+    </section>
+    <br>
+    <a href="/comments">back to index</a>
+</body>
+
+</html>
