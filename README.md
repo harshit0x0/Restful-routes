@@ -1,7 +1,6 @@
 # Restful-routes
-<h1> This is a simple CRUD based application which handles comments!   </h1>
-(hosted over localhost)
-
+<h3> This is a simple CRUD based application which handles comments!</h3>
+<p>(hosted over localhost)</p>
 Has features like:
 <ul>  
 <li>CREATE COMMENT</li>
