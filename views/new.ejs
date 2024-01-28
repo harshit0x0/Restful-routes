@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
+</head>
+
+<body>
+    <section>
+        <form action="http://localhost:3000/comments" method="post">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="username">
+            <br>
+            <label for="comment">Comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+            <br>
+            <button>submit</button>
+        </form>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section>
+        <form action="http://localhost:3000/comments" method="get">
+            <button>get all comments</button>
+        </form>
+    </section>
+    <br>
+    <a href="/comments">back to index</a>
+</body>
+
+</html>
